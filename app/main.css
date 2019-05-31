@@ -1,0 +1,131 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#headerWrapper {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    min-height: 80px;
+  }
+
+header{
+    width: 100%;
+    height: 80px;
+    background: #555;
+    color: #f1f1f1;
+    line-height: 80px;
+    position: fixed;
+    top: 0;
+}
+
+header{
+    transition:all 0.5s ease;
+}
+
+.headerContainer {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    float: left;
+}
+
+.top-nav {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+}
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+}
+
+.top-nav a:hover {
+    color: #FBCE2A;
+}
+
+header.sticky{
+    height: 50px;
+    line-height: 50px;
+}
+
+header.sticky #logo {
+    font-size: 22px;
+}
+
+header.sticky .top-nav a{
+    font-size: 16px;
+}
+
+.fwh-slide {
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.fwh-slide h1{
+    margin: 0;
+}
+
+.heating {
+    background-color: rgb(105, 105, 110);
+}
+
+.cooling {
+    background-color: rgb(145, 142, 142);
+}
+
+.products {
+    background-color:  rgb(105, 105, 110);
+}
+
+.service {
+    background-color: rgb(145, 142, 142);
+}
+
+.contact {
+    background-color:  rgb(105, 105, 110);
+}
+
+/* Footer */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    background-color: #718093;
+    padding: 2rem;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: #eee;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 1s infinite;
+    cursor: pointer;
+}
+
+.up i{
+    color: #16162d;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
