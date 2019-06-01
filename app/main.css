@@ -16,10 +16,10 @@ body, html{
 
 header{
     width: 100%;
-    height: 80px;
+    height: 100px;
     background: #555;
     color: #f1f1f1;
-    line-height: 80px;
+    line-height: 100px;
     position: fixed;
     top: 0;
 }
@@ -36,7 +36,7 @@ header{
 
 #logo {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 55px;
     float: left;
 }
 
@@ -47,7 +47,7 @@ header{
 .top-nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     margin: 0 15px;
 }
 
@@ -56,8 +56,8 @@ header{
 }
 
 header.sticky{
-    height: 50px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
 }
 
 header.sticky #logo {
@@ -73,12 +73,92 @@ header.sticky .top-nav a{
     box-sizing: border-box;
 }
 
-.fwh-slide h1{
+.fwh-slide-left h1{
     margin: 0;
     color: white;
     font-family: 'Roboto', sans-serif;
     padding: 50px;
     font-size: 3rem;
+    float: left;
+    padding-left: 9rem;
+}
+
+.fwh-slide-right h1{
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    font-size: 3rem;
+    float: right;
+    padding-right: 9rem;
+}
+
+.fwh-slide-left p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 50%;
+    line-height: 4rem;
+    font-size: 1.75rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
+}
+
+.fwh-slide-right p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    width: 50%;
+    line-height: 4rem;
+    font-size: 1.75rem;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    text-align: justify;
+}
+
+.contact h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    font-size: 3rem;
+    float: left;
+    padding-left: 9rem;
+}
+
+.contact p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 50%;
+    line-height: 4rem;
+    font-size: 1.75rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
+}
+
+.about h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    font-size: 3rem;
+    float: left;
+    padding-left: 9rem;
+}
+
+.about p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 50%;
+    line-height: 4rem;
+    font-size: 1.75rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
 }
 
 .about {
@@ -105,14 +185,9 @@ header.sticky .top-nav a{
     background-color:  rgb(105, 105, 110);
 }
 
-.fwh-slide p {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    float: right;
-    width: 50%;
-    line-height: 2rem;
-}
+.fwh-slide-right {
 
+}
 /* Footer */
 
 .copyright{
