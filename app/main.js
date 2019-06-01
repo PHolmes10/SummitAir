@@ -1,20 +1,20 @@
-// window.onscroll = function() {myFunction()};
+$(document).ready(function () {
+    $('nav a[href*="#"]').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 50
+        }, 1000);
+    });
+    $("#up").on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+});
 
-// var header = document.getElementById("myHeader");
-// var sticky = header.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("sticky");
-//   } else {
-//     header.classList.remove("sticky");
-//   }
-// }
-
-$(document).on('scroll', function(){
-    if($(this).scrollTop() > 1){
+$(document).on('scroll', function () {
+    if ($(this).scrollTop() > 1) {
         $('header').addClass('sticky');
     } else {
         $('header').removeClass('sticky');
-    }
+    };
 });

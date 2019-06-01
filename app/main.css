@@ -75,6 +75,14 @@ header.sticky .top-nav a{
 
 .fwh-slide h1{
     margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px;
+    font-size: 3rem;
+}
+
+.about {
+    background-color: rgb(145, 142, 142);
 }
 
 .heating {
@@ -97,13 +105,21 @@ header.sticky .top-nav a{
     background-color:  rgb(105, 105, 110);
 }
 
+.fwh-slide p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    width: 50%;
+    line-height: 2rem;
+}
+
 /* Footer */
 
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #718093;
-    padding: 2rem;
+    background-color: #555;
+    padding: .75rem;
     position: relative;
 }
 
@@ -128,4 +144,6 @@ header.sticky .top-nav a{
 
 .copyright p{
     font-size: 1.4rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
