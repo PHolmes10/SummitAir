@@ -14,6 +14,8 @@ body, html{
     padding: 0;
     overflow: hidden;
     min-height: 80px;
+    position: relative;
+    z-index: 50;
 }
 
 header{
@@ -102,12 +104,12 @@ header.sticky .top-nav a{
 }
 
 .fwh-slide {
-    height: 100vh;
+    height: 40rem;
     box-sizing: border-box;
     width: 100%;
 }
 
-.fire-icon-container {
+.gripfire-icon-container {
     width: 10rem;
     height: 10rem;
     font-size: 20rem;
@@ -121,6 +123,57 @@ header.sticky .top-nav a{
 }
 
 .fa-gripfire {
+    color: rgb(26, 115, 173);
+}
+
+.snowflake-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: 55rem;
+    float: left;
+    z-index: 3;
+}
+
+.fa-snowflake {
+    color: rgb(26, 115, 173);
+}
+
+.home-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: -250px;
+    float: left;
+    z-index: 1;
+}
+
+.fa-home {
+    color: rgb(26, 115, 173);
+}
+
+.tools-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: 55rem;
+    float: left;
+    z-index: 5;
+}
+
+.fa-tools {
     color: rgb(26, 115, 173);
 }
 
