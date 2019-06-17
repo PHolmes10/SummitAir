@@ -84,29 +84,56 @@ header.sticky .top-nav a{
 }
 
 /* Sections */
-.about p {
-    color: rgb(245, 172, 104);
-    font-family: 'Noto Sans HK', sans-serif;
-    float: right;
-    width: 50%;
-    line-height: 4rem;
-    font-size: 1.75rem;
-    padding-top: 4rem;
-    padding-right: 4rem;
-    text-align: justify;
-}
 
-.about-logo{
-    padding-left: 70px;
-    float: left;
-    padding-top: 70px;
-    height: 280px;
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 .fwh-slide {
     height: 40rem;
     box-sizing: border-box;
     width: 100%;
+}
+
+/* .about {
+    position: relative;
+} */
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p {
+    color: rgb(245, 172, 104);
+    font-family: 'Noto Sans HK', sans-serif;
+    /* float: right; */
+    width: 50%;
+    line-height: 4rem;
+    font-size: 1.75rem;
+    /* padding-top: 4rem;
+    padding-right: 4rem; */
+    text-align: justify;
+    /* position: absolute; */
+    right: 4rem;
+    top: 2rem;
+}
+
+.about-logo{
+    /* padding-left: ; */
+    /* float: left; */
+    /* padding-top: ; */
+    height: 280px;
+    padding-right: 2rem;
+    /* position: absolute; */
+    top: 4rem;
+    left: 4rem;
+    margin-right: 2rem;
 }
 
 .gripfire-icon-container {
