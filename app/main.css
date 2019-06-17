@@ -5,6 +5,8 @@ body, html{
     width: 100%;
 }
 
+/* Header */
+
 #headerWrapper {
     width: 100%;
     height: auto;
@@ -12,19 +14,16 @@ body, html{
     padding: 0;
     overflow: hidden;
     min-height: 80px;
-  }
+}
 
 header{
     width: 100%;
     height: 100px;
-    background: #555;
+    background: #2c3e50;
     color: #f1f1f1;
     line-height: 100px;
     position: fixed;
     top: 0;
-}
-
-header{
     transition:all 0.5s ease;
 }
 
@@ -35,24 +34,37 @@ header{
 }
 
 #logo {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
     font-size: 55px;
     float: left;
 }
 
+.header-logo {
+    height: 55px;
+    float: left;
+    padding: 20px;
+    position: fixed;
+    display: block;
+    left: 10px;
+}
+
 .top-nav {
     float: right;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
+    text-transform: uppercase;
+    position: fixed;
+    display: block;
+    right: 10px;
 }
 .top-nav a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .top-nav a:hover {
-    color: #FBCE2A;
+    color: rgb(245, 172, 104);
 }
 
 header.sticky{
@@ -60,23 +72,62 @@ header.sticky{
     line-height: 60px;
 }
 
-header.sticky #logo {
-    font-size: 22px;
+header.sticky .header-logo {
+    height: 35px;
+    padding: 12px;
 }
 
 header.sticky .top-nav a{
     font-size: 16px;
 }
 
+/* Sections */
+.about p {
+    color: rgb(245, 172, 104);
+    font-family: 'Noto Sans HK', sans-serif;
+    float: right;
+    width: 50%;
+    line-height: 4rem;
+    font-size: 1.75rem;
+    padding-top: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
+}
+
+.about-logo{
+    padding-left: 70px;
+    float: left;
+    padding-top: 70px;
+    height: 280px;
+}
+
 .fwh-slide {
     height: 100vh;
     box-sizing: border-box;
+    width: 100%;
+}
+
+.fire-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: -250px;
+    float: left;
+    z-index: 1;
+}
+
+.fa-gripfire {
+    color: rgb(26, 115, 173);
 }
 
 .fwh-slide-left h1{
     margin: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 115, 173);
+    font-family: 'Noto Sans HK', sans-serif;
     padding: 50px;
     font-size: 3rem;
     float: left;
@@ -85,8 +136,8 @@ header.sticky .top-nav a{
 
 .fwh-slide-right h1{
     margin: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 115, 173);
+    font-family: 'Noto Sans HK', sans-serif;
     padding: 50px;
     font-size: 3rem;
     float: right;
@@ -94,8 +145,8 @@ header.sticky .top-nav a{
 }
 
 .fwh-slide-left p {
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    color: rgb(245, 172, 104);
+    font-family: 'Noto Sans HK', sans-serif;
     float: right;
     width: 50%;
     line-height: 4rem;
@@ -106,8 +157,8 @@ header.sticky .top-nav a{
 }
 
 .fwh-slide-right p {
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    color: rgb(245, 172, 104);
+    font-family: 'Noto Sans HK', sans-serif;
     float: left;
     width: 50%;
     line-height: 4rem;
@@ -119,8 +170,8 @@ header.sticky .top-nav a{
 
 .contact h1 {
     margin: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 115, 173);
+    font-family: 'Noto Sans HK', sans-serif;
     padding: 50px;
     font-size: 3rem;
     float: left;
@@ -128,30 +179,8 @@ header.sticky .top-nav a{
 }
 
 .contact p {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    float: right;
-    width: 50%;
-    line-height: 4rem;
-    font-size: 1.75rem;
-    padding-top: 4rem;
-    padding-right: 4rem;
-    text-align: justify;
-}
-
-.about h1 {
-    margin: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    padding: 50px;
-    font-size: 3rem;
-    float: left;
-    padding-left: 9rem;
-}
-
-.about p {
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    color: rgb(245, 172, 104);
+    font-family: 'Noto Sans HK', sans-serif;
     float: right;
     width: 50%;
     line-height: 4rem;
@@ -162,39 +191,102 @@ header.sticky .top-nav a{
 }
 
 .about {
-    background-color: rgb(145, 142, 142);
+    background-color: #7f8c8d;
     /* background-image: url("images/summitAirLogoOpacity.png"); */
 }
 
 .heating {
-    background-color: rgb(105, 105, 110);
+    background-color: #95a5a6;
 }
 
 .cooling {
-    background-color: rgb(145, 142, 142);
+    background-color: #7f8c8d;
 }
 
 .products {
-    background-color:  rgb(105, 105, 110);
+    background-color:  #95a5a6;
 }
 
 .service {
-    background-color: rgb(145, 142, 142);
+    background-color: #7f8c8d;
 }
 
 .contact {
-    background-color:  rgb(105, 105, 110);
+    background-color:  #95a5a6;
 }
 
-.fwh-slide-right {
+/* CONTACT */
 
+/* .contact{
+    background-color: #2f3640;
 }
+
+form label{
+    font-size: 1.5rem;
+}
+
+input[type="submit"]{
+    width: initial;
+    background-color: #718093;
+    color: #eee;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+*/
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  min-width: 9rem;
+}
+  
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+}
+
+.submit {
+    background: #84AD47;
+    color: #fff;
+    width: auto;
+    float: right;
+}
+
+::placeholder {
+    color: darken(#f9f9f9, 50%);
+}
+
+textarea {
+  height: 10rem;
+}
+
+input[type="submit"]:hover{
+    color: #eee;
+    background-color: rgb(26, 115, 173);
+} 
+
+/* @font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+} */
+
 /* Footer */
 
 .copyright{
     width: 100%;
     text-align: center;
-    background-color: #555;
+    background-color: #2c3e50;
     padding: .75rem;
     position: relative;
 }
@@ -213,7 +305,7 @@ header.sticky .top-nav a{
 }
 
 .up i{
-    color: #16162d;
+    color: #2c3e50;
     font-size: 2rem;
     margin: auto;
 }
@@ -221,5 +313,17 @@ header.sticky .top-nav a{
 .copyright p{
     font-size: 1.4rem;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 #718093;
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
 }

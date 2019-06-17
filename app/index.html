@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Summit Air</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:100&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./main.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -19,7 +20,7 @@
         <header>
             <div class="headerContainer">
                 <div id="logo">
-                    Summit Air
+                    <img class="header-logo" src="images/summitAirLogoWordsOnly.png">
                 </div>
                 <nav class="top-nav">
                     <a href="#heating" class="nav-link">Heating</a>
@@ -32,7 +33,8 @@
         </header>
     </div>
     <section class="about fwh-slide" id="about">
-        <h1>About</h1>
+        <!-- <h1>(Logo)</h1> -->
+        <img class="about-logo" src="images/Summit Air logo.png">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet rem non incidunt doloremque magnam
             debitis nemo suscipit ut molestias similique quidem totam quis labore, voluptatum quia. Dolorem, sint dicta.
@@ -40,6 +42,9 @@
     </section>
     <section class="heating fwh-slide fwh-slide-left" id="heating">
         <h1>Heating</h1>
+        <div class="fire-icon-container">
+            <i class="fab fa-gripfire"></i>
+        </div>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet rem non incidunt doloremque magnam
             debitis nemo suscipit ut molestias similique quidem totam quis labore, voluptatum quia. Dolorem, sint dicta.
@@ -67,11 +72,34 @@
         </p>
     </section>
     <section class="contact fwh-slide" id="contact">
-        <h1>Contact</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eveniet rem non incidunt doloremque magnam
-            debitis nemo suscipit ut molestias similique quidem totam quis labore, voluptatum quia. Dolorem, sint dicta.
-        </p>
+        <!-- <div class="container" data-aos="fade-in"> -->
+        <div class="section-heading">
+            <h1>Contact</h1>
+            <!-- <h6>Let's work together</h6> -->
+            <!-- <h6>pholmes10@gmail.com</h6> -->
+        </div>
+        <!-- <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+                <label for="service">Services:</label>
+                <select name="services" id="service">
+                    <option value="">Heating</option>
+                    <option value="">Cooling</option>
+                    <option value="">Service</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form> -->
+        <form action="">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <textarea placeholder="Message" name="message" required></textarea>
+            <input class="submit" type="submit" value="Send">
+        </form>
+        <!-- </div> -->
     </section>
     <footer class="copyright">
         <div class="up" id="up">
