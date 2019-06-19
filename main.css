@@ -18,7 +18,17 @@ body, html{
     z-index: 50;
 }
 
-header{
+#headerWrapper2 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-height: 0px;
+    position: relative;
+    z-index: 40;
+}
+
+.header1{
     width: 100%;
     height: 100px;
     background: #2c3e50;
@@ -29,10 +39,41 @@ header{
     transition:all 0.5s ease;
 }
 
+.header2{
+    width: 100%;
+    height: 90px;
+    background: #425c77;
+    color: #f1f1f1;
+    line-height: 100px;
+    position: relative;
+    top: 0;
+}
+
 .headerContainer {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+}
+
+.headerContainer2 {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.phoneNumber {
+    float: left;
+    font-family: 'Noto Sans HK', sans-serif;
+    position: relative;
+    margin: 0;
+}
+
+.emergencyService {
+    float: right;
+    font-family: 'Noto Sans HK', sans-serif;
+    position: relative;
+    margin: 0;
 }
 
 #logo {
@@ -83,7 +124,7 @@ header.sticky .top-nav a{
     font-size: 16px;
 }
 
-/* Sections */
+/* Sections (General) */
 
 .container{
     width: 90%;
@@ -94,117 +135,12 @@ header.sticky .top-nav a{
 }
 
 .fwh-slide {
-    height: 40rem;
+    height: 31rem;
     box-sizing: border-box;
     width: 100%;
 }
 
-/* .about {
-    position: relative;
-} */
-
-.about .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about p {
-    color: rgb(245, 172, 104);
-    font-family: 'Noto Sans HK', sans-serif;
-    /* float: right; */
-    width: 50%;
-    line-height: 4rem;
-    font-size: 1.75rem;
-    /* padding-top: 4rem;
-    padding-right: 4rem; */
-    text-align: justify;
-    /* position: absolute; */
-    right: 4rem;
-    top: 2rem;
-}
-
-.about-logo{
-    /* padding-left: ; */
-    /* float: left; */
-    /* padding-top: ; */
-    height: 280px;
-    padding-right: 2rem;
-    /* position: absolute; */
-    top: 4rem;
-    left: 4rem;
-    margin-right: 2rem;
-}
-
-.gripfire-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 20rem;
-    margin-bottom: 2rem;
-    display: flex;
-    position: relative;
-    top: 10rem;
-    left: -250px;
-    float: left;
-    z-index: 1;
-}
-
-.fa-gripfire {
-    color: rgb(26, 115, 173);
-}
-
-.snowflake-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 20rem;
-    margin-bottom: 2rem;
-    display: flex;
-    position: relative;
-    top: 10rem;
-    left: 55rem;
-    float: left;
-    z-index: 3;
-}
-
-.fa-snowflake {
-    color: rgb(26, 115, 173);
-}
-
-.home-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 20rem;
-    margin-bottom: 2rem;
-    display: flex;
-    position: relative;
-    top: 10rem;
-    left: -250px;
-    float: left;
-    z-index: 1;
-}
-
-.fa-home {
-    color: rgb(26, 115, 173);
-}
-
-.tools-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 20rem;
-    margin-bottom: 2rem;
-    display: flex;
-    position: relative;
-    top: 10rem;
-    left: 55rem;
-    float: left;
-    z-index: 5;
-}
-
-.fa-tools {
-    color: rgb(26, 115, 173);
-}
-
-.fwh-slide-left h1{
+/* .fwh-slide-left h1{
     margin: 0;
     color: rgb(26, 115, 173);
     font-family: 'Noto Sans HK', sans-serif;
@@ -224,7 +160,7 @@ header.sticky .top-nav a{
     padding-right: 9rem;
 }
 
-.fwh-slide-left p {
+.fwh-slide-left ul {
     color: rgb(245, 172, 104);
     font-family: 'Noto Sans HK', sans-serif;
     float: right;
@@ -236,7 +172,7 @@ header.sticky .top-nav a{
     text-align: justify;
 }
 
-.fwh-slide-right p {
+.fwh-slide-right ul {
     color: rgb(245, 172, 104);
     font-family: 'Noto Sans HK', sans-serif;
     float: left;
@@ -246,7 +182,159 @@ header.sticky .top-nav a{
     padding-top: 4rem;
     padding-left: 4rem;
     text-align: justify;
+} */
+
+/* About Section */
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.about-logo{
+    height: 30vw;
+    padding-right: 2rem;
+    left: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+}
+
+.about p {
+    color: #eee;
+    font-family: 'Noto Sans HK', sans-serif;
+    width: 50%;
+    line-height: 2rem;
+    font-size: 1.8vw;
+    text-align: justify;
+    right: 4rem;
+    top: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.about {
+    background-color: #7f8c8d;
+    /* background-image: url("images/summitAirLogoOpacity.png"); */
+}
+
+/* Heating Section */
+
+.heating .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-gripfire {
+    color: rgb(26, 115, 173);
+}
+
+.gripfire-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 22rem;
+    margin-bottom: 2rem;
+    float: left;
+    z-index: 1;
+    margin-left: 5rem;
+    padding-right: 2rem;
+    width: 50%;
+    /* height: 30vw;
+    left: 4rem;
+    margin-right: 2rem;
+    margin-bottom: 4rem; */
+}
+
+.heating ul {
+    float: right;
+    color: #eee;
+    font-family: 'Noto Sans HK', sans-serif;
+    width: 50%;
+    line-height: 4rem;
+    font-size: 3.5vw;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.heating {
+    background-color: #95a5a6;
+}
+
+/* Cooling Section */
+
+.snowflake-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: 55rem;
+    float: left;
+    z-index: 3;
+}
+
+.fa-snowflake {
+    color: rgb(26, 115, 173);
+}
+
+
+.cooling {
+    background-color: #7f8c8d;
+}
+
+/* Products Section */
+
+.home-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: -250px;
+    float: left;
+    z-index: 1;
+}
+
+.fa-home {
+    color: rgb(26, 115, 173);
+}
+
+
+.products {
+    background-color:  #95a5a6;
+}
+
+/* Service Section */
+
+.tools-icon-container {
+    width: 10rem;
+    height: 10rem;
+    font-size: 20rem;
+    margin-bottom: 2rem;
+    display: flex;
+    position: relative;
+    top: 10rem;
+    left: 55rem;
+    float: left;
+    z-index: 5;
+}
+
+.fa-tools {
+    color: rgb(26, 115, 173);
+}
+
+.service {
+    background-color: #7f8c8d;
+}
+
+/* Contact Section */
 
 .contact h1 {
     margin: 0;
@@ -268,27 +356,6 @@ header.sticky .top-nav a{
     padding-top: 4rem;
     padding-right: 4rem;
     text-align: justify;
-}
-
-.about {
-    background-color: #7f8c8d;
-    /* background-image: url("images/summitAirLogoOpacity.png"); */
-}
-
-.heating {
-    background-color: #95a5a6;
-}
-
-.cooling {
-    background-color: #7f8c8d;
-}
-
-.products {
-    background-color:  #95a5a6;
-}
-
-.service {
-    background-color: #7f8c8d;
 }
 
 .contact {
@@ -407,3 +474,5 @@ input[type="submit"]:hover{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
     }
 }
+
+/* Media Queries */
