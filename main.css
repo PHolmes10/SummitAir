@@ -240,14 +240,10 @@ header.sticky .top-nav a{
 
 .fa-gripfire {
     color: rgb(26, 115, 173);
-    font-size: 23rem;
+    font-size: 30vw;
     margin-top: 20px;
     margin-right: 8vw;
 }
-
-/* .heating-icon-title-container {
-    margin-right: 10vw;
-} */
 
 .heating ul {
     color: #eee;
@@ -266,27 +262,40 @@ header.sticky .top-nav a{
 
 /* Cooling Section */
 
-.cooling h1 {
-    margin: 0;
+.cooling .container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.snowflake-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 20rem;
-    margin-bottom: 2rem;
-    display: flex;
-    position: relative;
-    top: 10rem;
-    left: 55rem;
-    float: left;
-    z-index: 3;
+.cooling h1 {
+    position: absolute;
+    margin: 0;
+    color: rgb(26, 115, 173);
+    font-family: 'Noto Sans HK', sans-serif;
+    top: 0px;
+    right: 0px;
+    font-size: 5vw;
 }
 
 .fa-snowflake {
     color: rgb(26, 115, 173);
+    font-size: 30vw;
+    margin-top: 20px;
+    margin-left: 8vw;
 }
 
+.cooling ul {
+    color: #eee;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 6vw;
+    font-size: 2.8vw;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
 
 .cooling {
     background-color: #7f8c8d;
