@@ -227,36 +227,30 @@ header.sticky .top-nav a{
     justify-content: center;
 }
 
-.fa-gripfire {
+.heating h1 {
+    margin: 0;
     color: rgb(26, 115, 173);
+    font-family: 'Noto Sans HK', sans-serif;
+    position: absolute;
+    font-size: 5vw;
 }
 
-.gripfire-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 22rem;
-    margin-bottom: 2rem;
-    float: left;
-    z-index: 1;
-    margin-left: 5rem;
-    padding-right: 2rem;
-    width: 50%;
-    /* height: 30vw;
-    left: 4rem;
-    margin-right: 2rem;
-    margin-bottom: 4rem; */
+.fa-gripfire {
+    color: rgb(26, 115, 173);
+    font-size: 23rem;
+    margin-right: 10vw;
+    padding-top: 20px;
 }
 
 .heating ul {
-    float: right;
     color: #eee;
     font-family: 'Noto Sans HK', sans-serif;
-    width: 50%;
-    line-height: 4rem;
-    font-size: 3.5vw;
     font-weight: bolder;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    text-align: justify;
+    line-height: 6vw;
+    font-size: 2.8vw;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
 .heating {
@@ -264,6 +258,10 @@ header.sticky .top-nav a{
 }
 
 /* Cooling Section */
+
+.cooling h1 {
+    margin: 0;
+}
 
 .snowflake-icon-container {
     width: 10rem;
