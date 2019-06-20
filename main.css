@@ -303,23 +303,40 @@ header.sticky .top-nav a{
 
 /* Products Section */
 
-.home-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 20rem;
-    margin-bottom: 2rem;
-    display: flex;
+.products .container{
     position: relative;
-    top: 10rem;
-    left: -250px;
-    float: left;
-    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products h1 {
+    position: absolute;
+    margin: 0;
+    color: rgb(26, 115, 173);
+    font-family: 'Noto Sans HK', sans-serif;
+    top: 0px;
+    left: 0px;
+    font-size: 5vw;
 }
 
 .fa-home {
     color: rgb(26, 115, 173);
+    font-size: 30vw;
+    margin-top: 20px;
+    margin-right: 8vw;
 }
 
+.products p {
+    color: #eee;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 6vw;
+    font-size: 2.8vw;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
 
 .products {
     background-color:  #95a5a6;
@@ -327,21 +344,39 @@ header.sticky .top-nav a{
 
 /* Service Section */
 
-.tools-icon-container {
-    width: 10rem;
-    height: 10rem;
-    font-size: 20rem;
-    margin-bottom: 2rem;
-    display: flex;
+.service .container{
     position: relative;
-    top: 10rem;
-    left: 55rem;
-    float: left;
-    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service h1 {
+    position: absolute;
+    margin: 0;
+    color: rgb(26, 115, 173);
+    font-family: 'Noto Sans HK', sans-serif;
+    top: 0px;
+    right: 0px;
+    font-size: 5vw;
 }
 
 .fa-tools {
     color: rgb(26, 115, 173);
+    font-size: 30vw;
+    margin-top: 20px;
+    margin-left: 8vw;
+}
+
+.service p {
+    color: #eee;
+    font-family: 'Noto Sans HK', sans-serif;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 6vw;
+    font-size: 2.8vw;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
 }
 
 .service {
@@ -355,7 +390,7 @@ header.sticky .top-nav a{
     color: rgb(26, 115, 173);
     font-family: 'Noto Sans HK', sans-serif;
     padding: 50px;
-    font-size: 3rem;
+    font-size: 5vw;
     float: left;
     padding-left: 9rem;
 }
