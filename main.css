@@ -222,25 +222,32 @@ header.sticky .top-nav a{
 /* Heating Section */
 
 .heating .container{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .heating h1 {
+    position: absolute;
     margin: 0;
     color: rgb(26, 115, 173);
     font-family: 'Noto Sans HK', sans-serif;
-    position: absolute;
+    top: 0px;
+    left: 0px;
     font-size: 5vw;
 }
 
 .fa-gripfire {
     color: rgb(26, 115, 173);
     font-size: 23rem;
-    margin-right: 10vw;
-    padding-top: 20px;
+    margin-top: 20px;
+    margin-right: 8vw;
 }
+
+/* .heating-icon-title-container {
+    margin-right: 10vw;
+} */
 
 .heating ul {
     color: #eee;
